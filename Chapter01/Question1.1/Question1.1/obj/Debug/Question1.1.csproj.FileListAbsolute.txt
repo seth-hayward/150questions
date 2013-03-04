@@ -1,0 +1,5 @@
+C:\dev\150questions\Chapter01\Question1.1\Question1.1\bin\Debug\Question1.1.exe
+C:\dev\150questions\Chapter01\Question1.1\Question1.1\bin\Debug\Question1.1.pdb
+C:\dev\150questions\Chapter01\Question1.1\Question1.1\obj\Debug\Question1.1.csprojResolveAssemblyReference.cache
+C:\dev\150questions\Chapter01\Question1.1\Question1.1\obj\Debug\Question1.1.exe
+C:\dev\150questions\Chapter01\Question1.1\Question1.1\obj\Debug\Question1.1.pdb
