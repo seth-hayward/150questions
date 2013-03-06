@@ -10,6 +10,13 @@ namespace Question1._6
         static void Main(string[] args)
         {
 
+            // Question 1.6
+            //
+            // Given an image reprsented by an NxN matrix, where each pixel in the image
+            // is 4 bytes, write a method to rotate the image by 90 degrees. Can you
+            // do this in place?
+
+
             String[,] matrix = new String[2,2];
 
             matrix[0, 0] = "a";

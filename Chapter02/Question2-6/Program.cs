@@ -11,6 +11,20 @@ namespace Question2_6
         static void Main(string[] args)
         {
 
+            //
+            // Question 2.6
+            //
+            // Given a circular linked list, implement an algorithm which returns
+            // the node at the beginning of the loop. 
+            // DEFINITION
+            // Circular linked list: A (corrupt linked list in which a node's next pointer
+            // points to an earlier node, so as to make a loop in the linked list.
+            // EXAMPLE
+            // Input: A -> B -> C -> D -> E -> C [the same C as earlier]
+            // Output: C
+            //
+
+
             Random rand = new Random();
             Node valid_list = new Node(400);
             for (int x = 0; x <= 4; x++)

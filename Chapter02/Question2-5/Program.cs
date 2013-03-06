@@ -10,6 +10,20 @@ namespace Question2_5
         static void Main(string[] args)
         {
 
+            //
+            // Question 2.5
+            //
+            // You have jtwo numbers represented by a linked list, where each node contains
+            // a single digit. The digits are stored in reverse order, such that the 1's digit 
+            // is the head of the list. Write a function that adds the two numbers and returns
+            // the sum as a linked list.
+            //
+            // Example:
+            // Input: (7 -> 1 -> 6) + (5 -> 9 -> 2). That is, 617+295.
+            // Output: 2 -> 1 -> 9. That is, 912.
+            // FOLLOW UP
+            // Suppose the digits are stored in forward order. Repeat the above problem.
+            
             Random rand = new Random();
             Node first = new Node(rand.Next(1, 9));
             Node second = new Node(rand.Next(1, 9));
@@ -31,13 +45,12 @@ namespace Question2_5
             Console.WriteLine("first number: " + first_number);
             Console.WriteLine("second number: " + second_number);
 
-
             int output_1 = int.Parse(Reverse(first_number));
             int output_2 = int.Parse(Reverse(second_number));
             int sum = output_1 + output_2;
             Console.WriteLine(output_1.ToString() + "+" + output_2.ToString() + "=" + sum.ToString());
 
-            Node sum_list = create_list_from_number(sum);
+            Node sum_list = create_list_from_number(int.Parse(Reverse(sum.ToString())));
 
             Console.WriteLine("LinkedList representing sum: ");
             print_node(sum_list);

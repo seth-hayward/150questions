@@ -10,6 +10,14 @@ namespace Question2_3
         static void Main(string[] args)
         {
 
+            // Question 2.3
+            //
+            // Implement an algorithm to delete a node in the middle of singly
+            // linked list, given only access to that node.
+            // EXAMPLE
+            // Input: the node c from the linked list a->b->c->d->e
+            // Result: nothing is returned, but the new li nked list looks like a->b->d->e
+
             Random rand = new Random();
             Node seth = new Node(500);
             for (int x = 0; x <= 10; x++)
