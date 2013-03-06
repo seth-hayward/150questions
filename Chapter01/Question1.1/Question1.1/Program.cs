@@ -57,6 +57,8 @@ namespace Question1._1
             // at all the items in a list, and a "ToCharArray" for converting
             // a string into an array that contains each character in the string.
 
+            Console.ReadLine();
+
         }
     }
 }
