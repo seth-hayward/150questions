@@ -109,12 +109,13 @@ namespace Question3_6
                 runner = reversed.pop();
             }
 
+            below = reverse_if_backwards(below);
+
             below.push(d);
 
             //Console.WriteLine("below: ");
             //Program.printStack(below);
 
-            //below = reverse(below);
 
             int? first;
             int? last;
@@ -131,7 +132,7 @@ namespace Question3_6
             //Program.printStack(above);
 
             runner = above.pop();
-            first = runner;
+            last = runner;
             while (runner != null)
             {
                 temp.push((int)runner);
@@ -140,11 +141,11 @@ namespace Question3_6
 
             first = temp.peek();
 
-            Console.WriteLine("First: " + first + " - Last: " + last);
-            //if (first < last)
+            //Console.WriteLine("First: " + first + " - Last: " + last);
+            //if (first > last)
             //{
             //    Console.WriteLine("Reversed: " + first + " - " + last);
-            //    temp = reverse(temp);
+            //    temp = reverse_if_backwards(temp);
             //}
 
             container = temp;
@@ -169,14 +170,14 @@ namespace Question3_6
             last = runner;
             while (runner != null)
             {
-                runner = input.pop();
                 if (runner != null) { temp.push((int)runner); }
+                runner = input.pop();
             }
 
             first = temp.peek();
 
-            Console.WriteLine("First: " + first + " - Last: " + last);
-            if (first < last)
+            //Console.WriteLine("First: " + first + " - Last: " + last);
+            if (first > last)
             {
                 // smallest on top
                 return temp;
@@ -217,7 +218,14 @@ namespace Question3_6
 
         public int? peek()
         {
-            return top.data;
+            if (top == null)
+            {
+                return null;
+            }
+            else
+            {
+                return top.data;
+            }
         }
 
         public int? pop()
